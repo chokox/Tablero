@@ -20,7 +20,7 @@ a{text-decoration:none;}
 .underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
-img{max-width:70%;}
+img{max-width:100%;}
 /*end reset*/
 /*---start-wrap*/
 
@@ -78,8 +78,8 @@ img{max-width:70%;}
 	  }
 			
 	.boxgrid{ 
-			width: 130px;
-			height: 130px;
+			width: 331px;
+			height: 260px;
 			margin: 10px;
 			float: left;
 			background: #161613;
@@ -119,11 +119,11 @@ img{max-width:70%;}
 				-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
  			}
  				.captionfull .boxcaption {
- 					top: 130;
+ 					top: 260;
  					left: 0;
  				}
  				.caption .boxcaption {
- 					top: 130px;
+ 					top: 179px;
  					left: 0;
  				}
 				
