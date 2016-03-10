@@ -10,7 +10,9 @@ class Admin extends CI_Controller {
 		$this->load->view('administrador/index.html');
 	}
 
-
+	function principalTablero(){
+		$this->load->view('web/index.html');
+	}
 
 	}
 	?>
