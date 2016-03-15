@@ -23,4 +23,4 @@ if(isset($_GET['id'])) {
    echo $datos;
 
 }
-?>
+?>s
