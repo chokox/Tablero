@@ -31,8 +31,8 @@ img{max-width:100%;}
 /*---start-header*/
 .header{
 	margin-bottom: 28px;
-	border-bottom: 1px ridge #FF8400;
-	background: url('../images/header-bg.png') #353534;
+	border-bottom: 1px ridge #333333;
+	background: url('../images/header-bg.png') #333333;
 }
 /*---start-logo*/
 .logo{
