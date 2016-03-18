@@ -13,7 +13,7 @@
 
     While ($registro=mysql_fetch_assoc($consulta)){
         echo "<img src=\"ver.php?id=".$registro['id']."\">";
-        echo "<br> Nombre archivo: ".$registro['archivo_nombre'];
+        echo "<br>".$registro['archivo_nombre'];
         echo "<br> <br>";
     }
 

@@ -72,109 +72,41 @@ $("#boton").click(function(){
 			<!-- content-gallery-->
 			
 
- 
-<form action="contactos" method="POST" >
+
 			</div>
+<center>
 			<div class="wrap">
 			<div class="content-gallery">
 		
 				<div class="boxgrid caption">
-				<img src="/tablero/images/img2.jpg"/>  
+				<a href="/tablero/tabi/sujeto" target="_BLANK">
+				<center>
+					<img src="/tablero/images/niño.png"/> 
+				</center>
+				 
 				<div class="cover boxcaption">
-
- Usuario: <input type="text" name="usuario" />
-
-  Clave: <input type="password" name="clave" />
-      <input type="submit" value="Enviar" />
-
-					<h3>Niño</h3>
-					
-					<p>Artist<br/><a href="/tablero/tabi/blog" target="_BLANK">Niño</a></p>
+			   <center><h3>Niño</h3></center> 
 				
 				</div>
 			</div>
 			</div>
---</form>
-			<div class="content-gallery">
-				<div class="boxgrid caption">
-				<img src="/tablero/images/img2.jpg"/>
-				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
-					<p>Artist<br/><a href="/tablero/tabi/artistas" target="_BLANK">Niña</a></p>
-				</div>
-			</div>
-			</div>
-
-				<div class="content-gallery">
-				<div class="boxgrid caption">
-				<img src="/tablero/images/img20.jpg"/>
-				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
-					<p>Artist<br/><a href="/tablero/tabi/contactos" target="_BLANK">More Work</a></p>
-				</div>
-			</div>
-			</div>
-
-				<div class="content-gallery">
-				<div class="boxgrid caption">
-				<img src="/tablero/images/img11.jpg"/>
-				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
-					<p>Artist<br/><a href="#" target="_BLANK">More Work</a></p>
-				</div>
-				</div>
-				</div>
-
-				<div class="content-gallery">
-				<div class="boxgrid caption">
-				<img src="/tablero/images/img14.jpg"/>
-				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
-					<p>Artist<br/><a href="#" target="_BLANK">More Work</a></p>
-				</div>
-			</div>
-			</div>
-			<div class="content-gallery">
-				<div class="boxgrid caption">
-				<img src="/tablero/images/img15.jpg"/>
-				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
-					<p>Artist<br/><a href="#" target="_BLANK">More Work</a></p>
-				</div>
-			</div>
-			</div>
 
 			<div class="content-gallery">
 				<div class="boxgrid caption">
-				<img src="/tablero/images/img18.jpg"/>
+				<a href="/tablero/tabi/sujeto" target="_BLANK">
+				<img src="/tablero/images/niña.png"/>
 				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
-					<p>Artist<br/><a href="#" target="_BLANK">More Work</a></p>
+					
+					<center><h3>Niña</h3></center> 
 				</div>
 			</div>
 			</div>
 
-			<div class="content-gallery">
-				<div class="boxgrid caption">
-				<img src="/tablero/images/img2.jpg"/>
-				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
-					<p>Artist<br/><a href="#" target="_BLANK">More Work</a></p>
-				</div>
-			</div>
-			</div>
+				
 
-			<div class="content-gallery">
-				<div class="boxgrid caption">
-				<img src="/tablero/images/img6.jpg"/>
-				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
-					<p>Artist<br/><a href="#" target="_BLANK">More Work</a></p>
-				</div>
-				<div class="clear"> </div>
 			</div>
-			</div>
-			</div>
+</center>
+
 			</div>
 <div class="clear"> </div>
 			<!-- End-content-gallery-->
@@ -223,6 +155,36 @@ $("#boton").click(function(){
 			</div>
 			</div>
 			</div>
+
+<div>
+	   <?php
+	   error_reporting(E_COMPILE_ERROR|E_ERROR|E_CORE_ERROR);
+    mysql_connect("localhost","root","") or die ("no se ha podido conectar a la BD");
+
+    mysql_select_db("tablero") or die ("no se ha podido seleccionar la BD");
+
+    $sql = "SELECT i.id,i.archivo_nombre
+		FROM categoria_imagen as nc
+		inner join imagen as i
+		on nc.id_categoria_imagen=i.id_categoria_imagen
+		where nc.nombre_categoria='agresiones'";
+
+    $consulta = mysql_query($sql) or die ("No se pudo ejecutar la consulta");
+
+    While ($registro=mysql_fetch_assoc($consulta)){
+        echo "<img src=\"ver.php?id=".$registro['id']."\">";
+        echo "<br>".$registro['archivo_nombre'];
+        echo "<br> <br>";
+    }
+
+
+
+    
+
+?>
+
+</div>
+
 			<div class="footer1">
 			
 			<audio width="300" height="32" src="\tablero\abuela-tengo-dolor-en-el-oido.wav" controls="" autoplay="autoplay" preload="preload"> </audio>
