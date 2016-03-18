@@ -12,8 +12,8 @@ class Consultas extends CI_Controller
     public function index()
     {
         $data['agresiones'] = $this->consultas_model->agresiones();
-        echo '<pre>';
-        print_r($data['agresiones']);
+       /* echo '<pre>';
+        print_r($data['agresiones']);*/
         $this->load->view('consultas_view',$data);
     }
 }

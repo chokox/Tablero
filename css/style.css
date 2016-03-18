@@ -32,7 +32,8 @@ img{max-width:100%;}
 .header{
 	margin-bottom: 28px;
 	border-bottom: 1px ridge #333333;
-	background: url('../images/header-bg.png') #333333;
+	background: #3B3C3A;
+	/*url('../images/header-bg.png') #333333;*/
 }
 /*---start-logo*/
 .logo{
@@ -70,7 +71,7 @@ img{max-width:100%;}
 	  }
 .content-gallery h3{
 	 margin: 10px 10px 0 10px; 
-	 color:#FFF;
+	 color:#161613;
 	 font-family: 'Carrois Gothic SC', sans-serif;
 	 font-size:23px;
 	  letter-spacing:-1px; 
@@ -82,7 +83,7 @@ img{max-width:100%;}
 			height: 260px;
 			margin: 10px;
 			float: left;
-			background: #161613;
+			background: #FFF;
 			border: ridge 1px rgb(255, 255, 255);
 			overflow: hidden;
 			position: relative;
@@ -94,7 +95,7 @@ img{max-width:100%;}
 		top:170px;
 	}
 				.boxgrid img{ 
-					position: absolute; 
+					position: center; 
 					top: 0; 
 					left: 0; 
 					border: 0; 
@@ -109,10 +110,10 @@ img{max-width:100%;}
 			.boxcaption{ 
 				float: left; 
 				position: absolute; 
-				background: #000; 
+				background: #FF8400; 
 				height: 100px; 
 				width: 100%; 
-				opacity: .8; 
+				opacity: .9; 
 				/* For IE 5-7 */
 				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 				/* For IE 8 */
@@ -173,7 +174,7 @@ ul.dc_paginationA03 li a:hover, ul.dc_paginationA03 li a.current {
 }
 /*---footer----*/
 .footer {
-	background-color: #FF8400;
+	background-color: #815D0E;
 	padding: 33px 0px;
 }
 .footer h3 {

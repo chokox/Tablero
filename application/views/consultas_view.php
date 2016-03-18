@@ -77,6 +77,7 @@
 
             echo '<pre>';
             print_r($agresiones);
+            print_r($agresiones);
             ?>
            
             </div>
