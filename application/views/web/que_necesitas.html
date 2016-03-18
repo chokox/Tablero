@@ -77,13 +77,11 @@ $("#boton").click(function(){
 			</div>
 			<div class="wrap">
 			<div class="content-gallery">
-		
 				<div class="boxgrid caption">
 				<a href="/tablero/tabi/verbo" target="_BLANK">
-				<img src="/tablero/images/yo_niño.png"/>  
+				<img src="/tablero/images/poner.png"/>  
 				<div class="cover boxcaption">
-
- 				<h3>Niño</h3>
+				<center><h3>Poner</h3></center>
 					
 					
 				
@@ -94,10 +92,9 @@ $("#boton").click(function(){
 			<div class="content-gallery">
 				<div class="boxgrid caption">
 				<a href="/tablero/tabi/verbo" target="_BLANK">
-				<img src="/tablero/images/MAMA.png"/>
+				<img src="/tablero/images/bañarse.png"/>
 				<div class="cover boxcaption">
-					<h3>Mamá</h3>
-					
+					<center><h3>Bañarme</h3></center>
 					
 				</div>
 			</div>
@@ -106,9 +103,9 @@ $("#boton").click(function(){
 				<div class="content-gallery">
 				<div class="boxgrid caption">
 				<a href="/tablero/tabi/verbo" target="_BLANK">
-				<img src="/tablero/images/papa.png"/>
+				<img src="/tablero/images/lavar_cara.png"/>
 				<div class="cover boxcaption">
-					<h3>Papá</h3>
+				<center><h3>Lavar cara</h3></center>
 					
 				</div>
 			</div>
@@ -117,10 +114,12 @@ $("#boton").click(function(){
 				<div class="content-gallery">
 				<div class="boxgrid caption">
 				<a href="/tablero/tabi/verbo" target="_BLANK">
-				<img src="/tablero/images/hermano.png"/>
+				<img src="/tablero/images/lavar_manos.png"/>
 				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
+				<center><h3>Lavar manos</h3></center>
 					
+					
+
 				</div>
 				</div>
 				</div>
@@ -128,45 +127,17 @@ $("#boton").click(function(){
 				<div class="content-gallery">
 				<div class="boxgrid caption">
 				<a href="/tablero/tabi/verbo" target="_BLANK">
-				<img src="/tablero/images/hermana.png"/>
+				<img src="/tablero/images/lavar_dientes.png"/>
 				<div class="cover boxcaption">
-					<h3>Kamil Smala</h3>
+					<center><h3>Lavar dientes</h3></center>
 					
 				</div>
 			</div>
 			</div>
-			<div class="content-gallery">
-				<div class="boxgrid caption">
-				<a href="/tablero/tabi/verbo" target="_BLANK">
-				<img src="/tablero/images/abuela.png"/>
-				<div class="cover boxcaption">
-					<h3>Abuela</h3>
-					
-				</div>
-			</div>
-			</div>
+		
 
-			<div class="content-gallery">
-				<div class="boxgrid caption">
-				<a href="/tablero/tabi/verbo" target="_BLANK">
-				<img src="/tablero/images/abuelo.png"/>
-				<div class="cover boxcaption">
-					<h3>Abuelo</h3>
-					
-				</div>
-			</div>
-			</div>
 
-			<div class="content-gallery">
-				<div class="boxgrid caption">
-				<a href="/tablero/tabi/verbo" target="_BLANK">
-				<img src="/tablero/images/maestro.png"/>
-				<div class="cover boxcaption">
-					<h3>Maestro</h3>
-					
-				</div>
-			</div>
-			</div>
+			
 
 			
 			</div>
@@ -219,34 +190,6 @@ $("#boton").click(function(){
 			</div>
 			</div>
 
-<div>
-	   <?php
-	   error_reporting(E_COMPILE_ERROR|E_ERROR|E_CORE_ERROR);
-    mysql_connect("localhost","root","") or die ("no se ha podido conectar a la BD");
-
-    mysql_select_db("tablero") or die ("no se ha podido seleccionar la BD");
-
-    $sql = "SELECT i.id,i.archivo_nombre
-		FROM categoria_imagen as nc
-		inner join imagen as i
-		on nc.id_categoria_imagen=i.id_categoria_imagen
-		where nc.nombre_categoria='agresiones'";
-
-    $consulta = mysql_query($sql) or die ("No se pudo ejecutar la consulta");
-
-    While ($registro=mysql_fetch_assoc($consulta)){
-        echo "<img src=\"ver.php?id=".$registro['id']."\">";
-        echo "<br>".$registro['archivo_nombre'];
-        echo "<br> <br>";
-    }
-
-
-
-    
-
-?>
-
-</div>
 
 			<div class="footer1">
 			

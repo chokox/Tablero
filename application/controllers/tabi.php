@@ -51,5 +51,9 @@ class Tabi extends CI_Controller {
 		$this->load->view('web/sentimientos_frase.html');
 	}
 
+	function que_necesitas(){
+		$this->load->view('web/que_necesitas.html');
+	}
+
 	}
 	?>
